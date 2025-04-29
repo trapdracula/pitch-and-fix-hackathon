@@ -346,13 +346,13 @@ function setupPromoCode() {
 
 // Setup checkout button
 function setupCheckoutButton() {
-  const checkoutBtn = document.getElementById("checkout-btn");
+  const checkoutBtn = document.getElementsByClassName("checkout-btn");
 
   if (checkoutBtn) {
     checkoutBtn.addEventListener("click", function () {
       // Redirect to checkout page (or show modal)
       alert("Proceeding to checkout...");
-      // window.location.href = 'checkout.html';
+      window.location.href = 'checkout.html';
     });
   }
 }
