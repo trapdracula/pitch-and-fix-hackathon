@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEase - Your One-Stop Shop</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/cat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/ShopEase-logo.svg" alt="ShopEase Logo" class="logo">
+           <a href="index.html"> <img src="images/ShopEase-logo.svg" alt="ShopEase Logo" class="logo"> </a>
         </div>
         <nav class="main-nav">
             <ul id="nav-items">
                 <li id="nav-item"><a href="index.html" class="active">Home</a></li>
-                <li id="nav-item"><a href="./pages/product-detail.html">Products</a></li>
+                <li id="nav-item"><a href="pages/products.html">Products</a></li>
                 <li id="nav-item"><a href="pages/categories.html">Categories</a></li>
                 <li id="nav-item"><a href="pages/about.html">About Us</a></li>
                 <li id="nav-item"><a href="pages/contact.html">Contact</a></li>
@@ -31,6 +31,7 @@
                 <div class="cart-items">
                     <!-- Cart items will be added here by JavaScript -->
                 </div>
+               <a href="./pages/cart.html"> <span class="cart-link">View My Cart</span></a>
                 <div class="cart-total">
                     <p>Total: $<span id="cart-total-amount">0.00</span></p>
                 </div>
@@ -39,11 +40,12 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" aria-label="ShopEase featured-categories">
         <div class="hero-content">
             <h1>Welcome to ShopEase</h1>
             <p>Find the best products at the best prices</p>
             <a href="pages/products.html" class="cta-button">Shop Now</a>
+           
         </div>
     </section>
 
@@ -53,7 +55,7 @@
             <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/product1.jpg" alt="Product 1">
+                    <img src="images/product1.png" alt="Product 1">
                     <div class="product-tag">Sale</div>
                 </div>
                 <div class="product-details">
@@ -77,7 +79,7 @@
             <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/product2.jpg" alt="Product 2">
+                    <img src="images/product2.png" alt="Product 2">
                 </div>
                 <div class="product-details">
                     <h3 class="product-title">Smart Watch</h3>
@@ -99,7 +101,7 @@
             <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/product3.jpg" alt="Product 3">
+                    <img src="images/product3.png" alt="Product 3">
                     <div class="product-tag">New</div>
                 </div>
                 <div class="product-details">
@@ -122,7 +124,7 @@
             <!-- Product 4 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="" alt="Product 4">
+                    <img src="images/product4.png" alt="Product 4">
                 </div>
                 <div class="product-details">
                     <h3 class="product-title">Laptop Bag</h3>
@@ -148,7 +150,7 @@
         <h2>Shop by Category</h2>
         <div class="category-grid">
             <div class="category-card">
-                <img src="images/category1.jpg" alt="Electronics Category">
+                <img src="images/category1.png" alt="Electronics Category">
                 <h3>Electronics</h3>
                 <a href="pages/categories.html#electronics" class="category-link">View All</a>
             </div>
@@ -158,7 +160,7 @@
                 <a href="pages/categories.html#clothing" class="category-link">View All</a>
             </div>
             <div class="category-card">
-                <img src="images/category3.jpg" alt="Home & Kitchen Category">
+                <img src="images/category3.avif" alt="Home & Kitchen Category">
                 <h3>Home & Kitchen</h3>
                 <a href="pages/categories.html#home" class="category-link">View All</a>
             </div>
@@ -227,6 +229,5 @@
     </footer>
 
 
-    <script src="js/main.js"></script>
-    <script src="js/cart.js"></script>
+    
 </body>
