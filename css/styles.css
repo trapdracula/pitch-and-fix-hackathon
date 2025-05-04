@@ -1,3 +1,21 @@
+:root{
+  --main: #fff;
+  --nav-card-text: #333;
+  --sub-text: #0078d4;
+  --sub-main: #eee;
+  --count: #777;
+  --newsletter: #f5f5f5;
+}
+
+.darkmode{  
+  --main: #3f3f3f;
+  --nav-card-text: #fff;
+  --sub-main: #E0E0E0;
+  --sub-text: #e5ebef;
+  --count: #605f5f;
+  --newsletter: #8d8d8d;
+}
+
 /* Global Styles */
 * {
   margin: 0;
@@ -8,7 +26,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: var(--sub-main);
 }
 
 /* Typography */
@@ -39,8 +57,12 @@ p {
 }
 
 a {
-  color: #0078d4;
+  color: var(--sub-text);
   text-decoration: none;
+}
+
+section h2 {
+  color: var(--nav-card-text);
 }
 
 /* Layout */
@@ -57,7 +79,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff;
+  background-color: var(--main);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -86,13 +108,13 @@ header {
 
 .nav-item a {
   padding: 0.5rem;
-  color: #333;
+  color: var(--nav-card-text);
   font-weight: 500;
 }
 
 .nav-item a.active,
 .nav-item a:hover {
-  color: #0078d4;
+  color: var(--sub-text);
 }
 
 /* Cart */
@@ -111,7 +133,7 @@ header {
   top: -10px;
   right: -10px;
   background-color: #ff9800;
-  color: white;
+  color: var(--main);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -126,7 +148,7 @@ header {
   right: 0;
   top: 100%;
   width: 300px;
-  background-color: white;
+  background-color: var(--main);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 1rem;
@@ -140,7 +162,7 @@ header {
 }
 
 .cart-total {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--sub-main);
   padding-top: 0.5rem;
   margin-bottom: 1rem;
   text-align: right;
@@ -151,7 +173,7 @@ header {
   width: 100%;
   padding: 0.75rem;
   background-color: #0078d4;
-  color: white;
+  color: var(--main);
   border: none;
   border-radius: 4px;
   font-weight: bold;
@@ -173,7 +195,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--main);
   text-align: center;
 }
 
@@ -185,18 +207,20 @@ header {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: var(--sub-main);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--sub-main);
 }
 
 .cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: #ff9800;
-  color: white;
+  color: var(--sub-main);
   border-radius: 4px;
   font-weight: bold;
   font-size: 1.1rem;
@@ -211,6 +235,7 @@ header {
 .featured-products,
 .categories {
   padding: 4rem 2rem;
+  background-color: var(--main);
 }
 
 .featured-products h2,
@@ -227,7 +252,7 @@ header {
 }
 
 .product-card {
-  border: 1px solid #eee;
+  border: 1px solid var(--sub-main);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -261,7 +286,7 @@ header {
   left: 10px;
   padding: 0.25rem 0.5rem;
   background-color: #ff9800;
-  color: white;
+  color: var(--main);
   font-size: 0.8rem;
   border-radius: 4px;
 }
@@ -273,6 +298,7 @@ header {
 .product-title {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+  color: var(--nav-card-text);
 }
 
 .product-price {
@@ -300,7 +326,7 @@ header {
 }
 
 .rating-count {
-  color: #777;
+  color: var(--count);
   font-size: 0.9rem;
   margin-left: 0.5rem;
 }
@@ -310,7 +336,7 @@ header {
   width: 100%;
   padding: 0.5rem;
   background-color: #0078d4;
-  color: white;
+  color: var(--sub-main);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -318,7 +344,7 @@ header {
 }
 
 .add-to-cart-btn:hover {
-  background-color: #005a9e;
+  background-color: var(--sub-main);
 }
 
 /* Categories */
@@ -341,7 +367,7 @@ header {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: var(--sub-main);
   padding: 0.5rem;
   margin: 0;
   text-align: center;
@@ -357,7 +383,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--sub-main);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -368,7 +394,7 @@ header {
 
 /* Newsletter */
 .newsletter {
-  background-color: #f5f5f5;
+  background-color: var(--newsletter);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -400,7 +426,7 @@ header {
 .newsletter button {
   padding: 0.75rem 1.5rem;
   background-color: #0078d4;
-  color: white;
+  color: var(--main);
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -409,7 +435,7 @@ header {
 /* Footer */
 footer {
   background-color: #222;
-  color: white;
+  color: var(--main);
   padding: 3rem 2rem 1rem;
 }
 
@@ -438,7 +464,7 @@ footer {
 }
 
 .footer-column a:hover {
-  color: white;
+  color: var(--main);
 }
 
 .social-links li a {
